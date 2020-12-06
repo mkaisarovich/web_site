@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" type = "image" href="https://cdn.discordapp.com/attachments/682496047813361674/785087184704372736/pngegg_2.png" />
+ <link rel="stylesheet" href="./styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+ <script src="./scripts/slider.js" defer></script>
+ <script src="./scripts/page.js" defer></script>
+ <script src="https://code.jquery.com/pep/0.4.1/pep.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <title>Mid site</title>
+ 
+</head>
+<body>
+  <div class="line-break"></div>
+  <section id="x" class="hide" onclick="doubleClicker()"><i class="fa fa-times"></i></section>
+  <section id="ArrowRight" class="hide"><i class="fas fa-angle-right"></i></section>
+  <section id="ArrowLeft" class="hide"><i class="fas fa-angle-left"></i></section>
+  <section id="topBtn" onclick="toTop()"><i class="fa fa-arrow-circle-up"></i></section>
+
+  <div style="margin-bottom: 150px;">
+
+  <nav>
+    <section class="whats-new logo" id="loGo" onclick="toTop()">
+   <img src="https://cdn.discordapp.com/attachments/403572135328481281/781758851878748160/pngegg_1.png" alt="jolly-roger" class="jolly-roger" style="cursor: pointer;">
+     <div class="logo-word">
+      <h2>Boruto</h2>
+      <div>fanpage</div>
+     </div>
+   </section>
+   <div class = "nav">
+    <button class="bars" id="barMen"><i class="fa fa-bars"></i></button> </div>
+   <ul class="nav-list" id="navigation-l">
+    <li><a href="#manga">Manga</a></li>
+    <li><a href="#anime">Anime</a></li>
+    <li><a href="#forum">Forum</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+    <li><button id = "sign" onclick = "login_page()">Log In</button></li>
+   
+   </ul>
+  </nav>
+
+  
+  <div class="user_profile">
+    <img id="profile_img" src="https://mfiles.alphacoders.com/601/601095.jpg" alt="">
+    <p id="user_name" style="margin-bottom: 20px;">Marlen</p>
+</div>
+
+
+<div class = "login-page">
+  
+  <div class = "form">
+    <img class = "closed" onclick = "close_login_page()" src = "https://cdn.discordapp.com/attachments/403572135328481281/784779740204236820/cancel_1.png" style="width: 25px;height: 25px;">
+    <form class = "register-form">
+      <input id="username" type = "text"  name = "username" placeholder="username" required>
+      <input id="password" type = "password"  pattern=".{6,}" title="six or more characters" name = "password" placeholder="password" required>
+      <input id="password1" type = "password"  pattern=".{6,}" title="six or more characters" name = "password1" placeholder="password" required>
+      <input id="email" type = "text" name = "email" placeholder="email id">
+      <button onclick = "login(username.value,password.value,password1.value,email.value)">Create</button>
+      <p class = "message">Already Registered?<a href="#">Login</a>  </p>
+    </form>
+
+    <form class = "login-form">
+      <input id="username" type = "text" name = "username" placeholder="user name" required>
+      <input id= "password" type = "password"  pattern=".{6,}" title="six or more characters" name = "password" placeholder="password" required>
+      <input id= "password1" type = "password"  pattern=".{6,}" title="six or more characters" name = "password1" placeholder="Repeat password" required>
+      <button onclick = "login(username.value,password.value,password1.value,email.value)">login</button>
+      <p class = "message">Not Registered?<a href="#">Register</a></p>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="slides-w-dots">
+  <div id="top" class="slideShow">
+
+   <div class="slide fade">
+    <label class="numb-txt">1 / 3</label>
+    <img src=" https://r2.ninemanga.com/comics/pic3/26/28954/1289875/1545025193292.jpg" alt="" style="position: center;">
+    <div class="txt">Watch anime</div>
+   </div>
+   
+   <div class="slide fade">
+    <label class="numb-txt">2 / 3</label>
+    <img src="https://wallpapercave.com/wp/wp2060464.jpg" alt="">
+    <div class="txt">Read Manga</div>
+   </div>
+
+   <div class="slide fade">
+    <label class="numb-txt">3 / 3</label>
+    <img src="https://cdn.hiptoro.com/wp-content/uploads/2020/02/Boruto-Chapter-44-Release-Date-Spoilers-Jigen-vs-Koji-Kashin-Battle-will-show-New-Fighting-Techniques-e1582788500664-1600x900.jpg" alt="" style=" background-size: contain;">
+    <div class="txt">Discuss in Forum</div>
+   </div>
+
+  </div>
+
+  <br>
+  <div style="text-align:center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  </div>
+
+  </div>
+
+  <section id="manga">
+    <div class="line-break"></div>
+    <div class="line-break"></div>
+    <div class="line-break"></div>
+    <div class="whats-new under-lufy" data-aos="fade-left">
+        <img src="https://cdn.discordapp.com/attachments/403572135328481281/781439944178663454/pngkey.com-naruto-rasengan-png-5219500.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+        <div>
+        <h1>Overview</h1>
+        <p>Uzumaki Boruto is a shinobi of the Uzumaki clan from 
+          Konohagakure no Sato, and a direct descendant of the 
+          Hyuga clan on his mother's side. Initially resentful
+           of his father since he became a Hokage, which caused 
+           him to distance himself from his family, boruto eventually
+            begins to respect Him and reunites with him, but decides
+             to become a shinobi like his mentor...</p>
+      </div>
+    </div>
+    <div class="line-break"></div>
+    <h1>Boruto Manga.</h1>
+    <h2>What is hapening now?</h2>
+    <br>
+    <div class="whats-new" >
+      <img src="https://www.gamemonday.com/wp-content/uploads/2017/02/BorutoPic.jpg" alt="manga-img">
+      <div class="right-txt">
+        <h3>The latest chapter of the manga: <span>52</span></h3>
+        <h3>Each chapter releases every <span>1-2 week(s)</span>.</h3>
+        <h3>Chapter review:</h3>
+        <p>The last Chapter of the Boruto manga reveals
+           Ishiki's secret weapon — and it is something that 
+           can lead to deadly consequences for Naruto and Sasuke.
+           Ishiki Otsutsuki proved to be the deadliest opponent of 
+           Naruto and Sasuke in the most recent Boruto chapters.
+            Not only does he boast an ocular Jutsu that can compress 
+            and store objects in a secret dimension, but he can also summon
+             them back as weapons, allowing him to manipulate and absorb his
+              opponents ' chakra-filled movements.
+          </p>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="line-break"></div>
+    <h1 data-aos="flip-right">The latest chapter of the manga: <span>52</span></h1>
+    <div class="line-break"></div>
+    <section id="manga-album" data-aos="fade-up"></section>
+    <section id="front-img" class="hide" touch-action="none"></section>
+  </section>
+
+  <section id="anime" style = "background-color: rgb(205, 243, 255);">
+    <div class="line-break"></div>
+    <h1>Boruto anime</h1>
+    <h3>The next episode(<span>episode 176</span>) will be aired on <span>Sun Dec 01, 2020</span>.</h3>
+    <h3>Preview of the next episode:</h3>
+    <div class="iframe-container">
+      <iframe width="960" height="350" src="https://www.youtube.com/embed/VAb1jLShblE" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+       gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="smthng">
+        <div class="crimson-line"></div>
+        <div style="margin: 50px 0;">
+          <label for="but">To see more "Boruto:Next Generations Naruto" episodes:</label>
+          <a type="button" id="but" class="button" href="https://a80.agorov.org/tip/tv/1805-boruto-naruto-next-generations1112.html" value="click here" style="width:140px;">click here</a>
+        </div>
+        <div class="crimson-line"></div>
+    </div>
+  </section>
+
+  <section id="forum">
+    <div class="forum-img">
+      <div class="header">
+        <h1>Join our forum</h1>
+        <div>If you want to find people with mutual interests</div>
+        <br>
+        <button class="button" onclick = "login_page()">Join Us</button>
+      </div>
+      <div class="img-gradient"></div>
+    </div>
+    <br>
+    <h1>theories from forum</h1>
+    <div class="whats-new">
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp2043583.jpg" alt="theory">
+        <div class="card-box">
+          <h4>The Reason why Blackbeard cannot turn himself into Darkness despite being a Logia</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dicta, saepe ipsum sit,
+             ullam deserunt accusamus temporibus nobis eum ipsam aliquid officiis adipisci odit quibusdam 
+             natus exercitationem hic velit consequatur.</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://img.gta5-mods.com/q95/images/one-piece-loading-screen-sound/bab0fb-606263.jpg" alt="theory">
+        <div class="card-box">
+          <h4>Why Luffy defeating Kaido and surpassing him now is crucial to the Story!</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum iste eveniet, quo ut aliquam
+             asperiores minus at distinctio consequatur dolorem saepe commodi magni magnam aspernatur
+              maxime quasi. Nam, aut!</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://vk.vkfaces.com/846018/v846018823/1c743/wconAsQSgD8.jpg" alt="theory">
+        <div class="card-box">
+          <h4>Kaido is way more powerful than we thought!</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam labore accusamus, 
+            assumenda doloribus id dicta quo officiis placeat amet a cupiditate. Optio qui
+             laborum totam obcaecati? Incidunt, ad officiis?</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+ 
+  
+
+  <footer id="contacts">
+    <br>
+    <h1>Contacts</h1>
+    <div class="whats-new base" style = "display: flex;justify-content: space-around;">
+      <div>
+        <h2 style="margin-left: 20px;">Gmail</h2>
+        <div>190103027@stu.sdu.edu.kz</div>
+        <div>Shokparbek Marlen</div>
+        <br>
+        <h2 style="margin-left: 20px;">Phone number</h>
+        <div style = "font-size:25px;">+7(777)-243-78-81</div>
+      
+      <br><br><br><br>
+      <div class = "social">
+        <img src = "https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19757.png" style="height: 30px;width: 30px; cursor: pointer;">
+        <img src = "https://pngimg.com/uploads/instagram/instagram_PNG11.png" style="height: 30px;width: 30px;cursor: pointer;">
+        <img src = "https://pngimg.com/uploads/google/google_PNG19630.png" style="height: 30px;width: 30px;cursor: pointer;">
+        <img src = "https://pngimg.com/uploads/telegram/telegram_PNG34.png" style="height: 30px;width: 30px;cursor: pointer;">
+        <img src = "https://pngimg.com/uploads/vkontakte/vkontakte_PNG25.png" style="height: 30px;width: 30px;cursor: pointer;">
+      </div>
+    </div>
+      <img id = "footer_img" src="https://cdn.discordapp.com/attachments/403572135328481281/781755471438151710/pngegg.png" alt="images">
+    </div>
+    <div class="line">&copy;Education Theme.All Rights Reserved</div>
+  </footer>
+
+
+<script>
+$('.message a').click(function(){
+  $('form').animate({height:"toggle",opacity:"toggle"},"slow");  
+});
+
+
+</script>
+  
+</body>
+</html>
